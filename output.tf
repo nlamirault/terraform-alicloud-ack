@@ -12,7 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-output "key_pair__key_name" {
+output "cluster_id" {
+    value = alicloud_cs_managed_kubernetes.ack.id
+}
+
+output "key_name" {
     value = alicloud_key_pair.ack.key_name
 }
 
